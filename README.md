@@ -3,7 +3,7 @@
 
 ### Author: Andrea Widjaja
 
-![Stat159](/images/markdown-logo.png) 
+![Stat159](/images/stat159-logo.png) 
 
 
 This paper discusses the importance of reproducibility in research and the tools needed to write one.
@@ -28,6 +28,9 @@ This paper discusses the importance of reproducibility in research and the tools
 		* Time Consumed
 * Conclusion
 
+  
+  
+  
 
 
 
