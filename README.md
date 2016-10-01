@@ -1,9 +1,9 @@
-# stat159-fall2016-project1
+# STAT 159, Fall 2016 (Project 1)
 
 
 ### Author: Andrea Widjaja
 
-![Stat159](../images/markdown-logo.png) 
+![Stat159](/images/markdown-logo.png) 
 
 
 This paper discusses the importance of reproducibility in research and the tools needed to write one.
