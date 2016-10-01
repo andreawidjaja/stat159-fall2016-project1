@@ -30,8 +30,11 @@
 <hr />
 <h2 id="typesettingformatting-language">Typesetting/Formatting Language</h2>
 <h3 id="markdown">Markdown</h3>
-<p><img src="../images/markdown-logo.png" alt="Stat159" /><br />
-As you read through this paper, have you ever paused and wondered... &quot;How did she make the list above? or &quot;How did she change the header size?&quot; If yes, then I might just have the perfect answer to your questions. That is, of course, Markdown. As a matter of fact, this paper you are reading right now is an example of a Markdown. Markdown is a text-based markup that can be used to create creative and easy to read documents.</p>
+<div class="figure">
+<img src="../images/markdown-logo.png" alt="Stat159" />
+<p class="caption">Stat159</p>
+</div>
+<p>As you read through this paper, have you ever paused and wondered... &quot;How did she make the list above? or &quot;How did she change the header size?&quot; If yes, then I might just have the perfect answer to your questions. That is, of course, Markdown. As a matter of fact, this paper you are reading right now is an example of a Markdown. Markdown is a text-based markup that can be used to create creative and easy to read documents.</p>
 <p>Markdown provides simple, intuitive formatting elements:</p>
 <ul>
 <li>This unordered list can be created by adding a <code>*</code> in front of each item
@@ -68,16 +71,19 @@ As you read through this paper, have you ever paused and wondered... &quot;How d
 <p>For this paper, my first step was to write my Markdown in any text editor. I chose <strong>MacDown</strong> because I was most familiar with it. To make things simpler, Markdown is basically like Microsoft Word, except it is used to design web pages. In order for me to continue to my next step, I need a document converter to convert my Markdown file into a HTML file.</p>
 <h2 id="document-conversion">Document Conversion</h2>
 <h3 id="pandoc">pandoc</h3>
-<p><img src="../images/pandoc-logo.png" alt="Stat159" /><br />
-An example of a document converter is Pandoc. Before you get started, make sure that you have pandoc instsalled in your computer. Pandoc is a universal document converter that can convert files from one markup format into another. It is a command-line tool that converts files between document formats such as markdown, LaTeX, HTML, Microsoft Word.Docx, and PDF.</p>
-<p>After finishing my Markdown, I used pandoc to convert Markdown into a HTML file.<br />
-By default, typing</p>
+<div class="figure">
+<img src="../images/pandoc-logo.png" alt="Stat159" />
+<p class="caption">Stat159</p>
+</div>
+<p>An example of a document converter is Pandoc. Before you get started, make sure that you have pandoc instsalled in your computer. Pandoc is a universal document converter that can convert files from one markup format into another. It is a command-line tool that converts files between document formats such as markdown, LaTeX, HTML, Microsoft Word.Docx, and PDF.</p>
+<p>After finishing my Markdown, I used pandoc to convert Markdown into a HTML file.</p>
+<p>By default, typing</p>
 <pre><code>pandoc doc.md </code></pre>
-<p>in the Terminal converts a file written in markdown into a HTML file.<br />
-Alternatively, you can also write it this way:</p>
+<p>in the Terminal converts a file written in markdown into a HTML file.</p>
+<p>Alternatively, you can also write it this way:</p>
 <pre><code>pandoc -f html -t markdown doc.md</code></pre>
-<p>The code above shows that pandoc converts (-f) from HTML (-t) to a markdown document called &quot;doc.md&quot;.<br />
-Pandoc is beneficial for everyone because it gives people access to the files they need. With research files being available and easily accessible, this introduces the idea of data transparency and efficiency in Reproducible Research.</p>
+<p>The code above shows that pandoc converts (-f) from HTML (-t) to a markdown document called &quot;doc.md&quot;.</p>
+<p>Pandoc is beneficial for everyone because it gives people access to the files they need. With research files being available and easily accessible, this introduces the idea of data transparency and efficiency in Reproducible Research.</p>
 <h2 id="version-control">Version Control</h2>
 <p>A common problem that researchers generally face is to manage changes. During the course of writing your own reproducible research, you will most like have to deal with adding new information or discoveries, modifying details, or deleting a text you might want to undo. Logically, you can do this by making copy of the original file, and editing the duplicated file. Sounds familiar? I am sure you have done this at least once in your lifetime. Editing the duplicated file to track changes might seem the perfect solution because it is very simple. However, what happens when you have to track the changes made to the original document more than once? It is surely going to be a hassle to manage the multiple variations made. This is when a version control system steps in.</p>
 <h4 id="git">Git</h4>
@@ -95,9 +101,12 @@ git log: shows log of what has been committed
 git diff: shows what you have changed  
 git rm and mv: remove and move files</code></pre>
 <h4 id="github">GitHub</h4>
-<p><img src="../images/github-logo.png" alt="Stat159" /><br />
-Git stores information on changes on files into a data structure called a repository. GitHub is a website service that hosts git repositories online publically or privately. As one of the online website service with the largest storage space, GitHub provides users the opportunity to collaborate with other users. GitHub is also known for its &quot;forking&quot; abilities. This allows users to utilize previously published repositories and reproduce their own project from it. To summarize, not only does GitHub act as a social networking medium in which users build their profile, upload projects, and connect with other users, but it also act as a resume to showcase completed projects.<br />
-Additionally, GitHub is also used to ease the graders in grading this paper.</p>
+<div class="figure">
+<img src="../images/github-logo.png" alt="Stat159" />
+<p class="caption">Stat159</p>
+</div>
+<p>Git stores information on changes on files into a data structure called a repository. GitHub is a website service that hosts git repositories online publically or privately. As one of the online website service with the largest storage space, GitHub provides users the opportunity to collaborate with other users. GitHub is also known for its &quot;forking&quot; abilities. This allows users to utilize previously published repositories and reproduce their own project from it. To summarize, not only does GitHub act as a social networking medium in which users build their profile, upload projects, and connect with other users, but it also act as a resume to showcase completed projects.</p>
+<p>Additionally, GitHub is also used to ease the graders in grading this paper by allowing collaboration.</p>
 <h2 id="program-building-unix-tool">Program Building (Unix Tool)</h2>
 <h3 id="makefile">Makefile</h3>
 <p>Compiling code files can be very inefficient, especially if you have to repititively type the command lines every time you want to do it. Don't worry! In an era where almost everything is instant and convenient, Makefile gives you a shortcut to execute the commands recipe by simply running the <code>make</code>program.</p>
@@ -118,20 +127,29 @@ paper/paper.md: paper/sections/00-abstract.md paper/sections/01-introduction.md 
 clean:
     rm -f paper/paper.html paper/paper.md</code></pre>
 <p>Notice that this paper is divided into 4 sections from the <a href="https://github.com/andreawidjaja/stat159-fall2016-project1/tree/master/paper/sections">sections folder</a>, and that Makefile is needed to compile these 4 files, which are <em>dependencies</em>, into one file called <code>paper.md</code>, the <em>target</em> file.</p>
-<p>Command used to build the target file: <code>cd paper/sections; pandoc *.md -s -o paper.md</code><br />
-To simplify things, an <code>*.md</code> is used to indicate all the dependent files with the extention <code>.md</code>.</p>
-<p>An example of command used to do a clean-up operation:<br />
-<code>clean: rm -f paper/paper.html paper/paper.md</code> This removes output files after compilation. The flag -f is used to avoid displaying error message if the output files do not exist.</p>
+<p>Command used to build the target file: <code>cd paper/sections; pandoc *.md -s -o paper.md</code></p>
+<p>To simplify things, an <code>*.md</code> is used to indicate all the dependent files with the extention <code>.md</code>.</p>
+<p>An example of command used to do a clean-up operation:</p>
+<p><code>clean: rm -f paper/paper.html paper/paper.md</code></p>
+<p>This removes output files after compilation. The flag -f is used to avoid displaying error message if the output files do not exist.</p>
 <p><code>.PHONY</code> is not really the name of a target file, but rather, the name of a recipe of actions to be performed.</p>
 <p>After completing your Makefile, then you can run <em>make</em> program by typing in <code>make</code> into the command-line. This will search for a file called makefile in your directory and execute the commands inside the Makefile. If you have several makefiles, then you can specify which target you want makefile to execute by typing in <code>make &lt;specific target name&gt;</code>. To execute the clean up operations, you can simply type in <code>make clean</code>.</p>
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="resources">Resources</h3>
 <blockquote>
-<p><a href="http://ropensci.github.io/reproducibility-guide/">Lecture 3</a><br />
-<a href="https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd">Lab 2</a><br />
-<a href="https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd">Lab 3</a><br />
-<a href="http://gastonsanchez.com/stat159/lectures/04-wavelab-pandoc/">Lecture 4</a><br />
-<a href="https://github.com/unix-tools/tutorial-makefiles/">Lecture 7</a></p>
+<p><a href="http://ropensci.github.io/reproducibility-guide/">Lecture 3</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd">Lab 2</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd">Lab 3</a></p>
+</blockquote>
+<blockquote>
+<p><a href="http://gastonsanchez.com/stat159/lectures/04-wavelab-pandoc/">Lecture 4</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://github.com/unix-tools/tutorial-makefiles/">Lecture 7</a></p>
 </blockquote>
 <h3 id="project-cycle">Project Cycle</h3>
 <h4 id="difficulty-challenges-solution">Difficulty, Challenges &amp; Solution</h4>

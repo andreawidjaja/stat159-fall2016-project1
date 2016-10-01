@@ -6,6 +6,7 @@
 
 ### Markdown  
 ![Stat159](../images/markdown-logo.png)  
+
 As you read through this paper, have you ever paused and wondered... "How did she make the list above? or "How did she change the header size?" If yes, then I might just have the perfect answer to your questions. That is, of course, Markdown. As a matter of fact, this paper you are reading right now is an example of a Markdown. Markdown is a text-based markup that can be used to create creative and easy to read documents.  
 
 Markdown provides simple, intuitive formatting elements:
@@ -34,20 +35,28 @@ For this paper, my first step was to write my Markdown in any text editor. I cho
 ## Document Conversion
 
 ### pandoc  
-![Stat159](../images/pandoc-logo.png)    
+![Stat159](../images/pandoc-logo.png)  
+
 An example of a document converter is Pandoc. Before you get started, make sure that you have pandoc instsalled in your computer. Pandoc is a universal document converter that can convert files from one markup format into another. It is a command-line tool that converts files between document formats such as markdown, LaTeX, HTML, Microsoft Word.Docx, and PDF.  
 
 After finishing my Markdown, I used pandoc to convert Markdown into a HTML file.  
+
 By default, typing 
+
 ```
 pandoc doc.md 
 ```
-in the Terminal converts a file written in markdown into a HTML file.    
-Alternatively, you can also write it this way:
+
+in the Terminal converts a file written in markdown into a HTML file.  
+
+Alternatively, you can also write it this way:  
+
 ```
 pandoc -f html -t markdown doc.md
 ```  
+
 The code above shows that pandoc converts (-f) from HTML (-t) to a markdown document called "doc.md".  
+
 Pandoc is beneficial for everyone because it gives people access to the files they need. With research files being available and easily accessible, this introduces the idea of data transparency and efficiency in Reproducible Research.
 
 ## Version Control
@@ -72,10 +81,10 @@ Examples of `git` commands:
 
 #### GitHub
 ![Stat159](../images/github-logo.png)  
+
 Git stores information on changes on files into a data structure called a repository. GitHub is a website service that hosts git repositories online publically or privately. As one of the online website service with the largest storage space, GitHub provides users the opportunity to collaborate with other users. GitHub is also known for its "forking" abilities. This allows users to utilize previously published repositories and reproduce their own project from it. To summarize, not only does GitHub act as a social networking medium in which users build their profile, upload projects, and connect with other users, but it also act as a resume to showcase completed projects.  
-Additionally, GitHub is also used to ease the graders in grading this paper.
 
-
+Additionally, GitHub is also used to ease the graders in grading this paper by allowing collaboration.
 
 ## Program Building (Unix Tool)
 
@@ -109,10 +118,13 @@ An exerpt of the Makefile rule I used to compile this paper:
 Notice that this paper is divided into 4 sections from the [sections folder](https://github.com/andreawidjaja/stat159-fall2016-project1/tree/master/paper/sections), and that Makefile is needed to compile these 4 files, which are *dependencies*, into one file called ```paper.md```, the *target* file.  
 
 Command used to build the target file: ```cd paper/sections; pandoc *.md -s -o paper.md```  
+
 To simplify things, an `*.md` is used to indicate all the dependent files with the extention `.md`.  
 
 An example of command used to do a clean-up operation:  
-`clean: rm -f paper/paper.html paper/paper.md  `
+
+`clean: rm -f paper/paper.html paper/paper.md`  
+
 This removes output files after compilation. The flag -f is used to avoid displaying error message if the output files do not exist.
 
 `.PHONY` is not really the name of a target file, but rather, the name of a recipe of actions to be performed.
@@ -124,9 +136,13 @@ If you have several makefiles, then you can specify which target you want makefi
 ## Additional Information
 ### Resources 
 > [Lecture 3](http://ropensci.github.io/reproducibility-guide/)   
+
 > [Lab 2](https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd)    
+
 > [Lab 3](https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd)   
+
 > [Lecture 4](http://gastonsanchez.com/stat159/lectures/04-wavelab-pandoc/)  
+
 > [Lecture 7](https://github.com/unix-tools/tutorial-makefiles/)
 
 ### Project Cycle 
