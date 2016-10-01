@@ -1,210 +1,30 @@
-\# Abstract
------------
+Abstract
+========
 
-  ----
-  ![St
-  at15
-  9](.
-  ./im
-  ages
-  /sta
-  t159
-  -log
-  o.pn
-  g)
+------------------------------------------------------------------------
 
-  \#\#
-  How
-  To
-  Make
-  Your
-  Own
-  Repr
-  oduc
-  ible
-  Rese
-  arch
-  \#\#
-  \#
-  Auth
-  or:
-  Widj
-  aja,
-  Andr
-  ea
+![](../images/stat159-logo.png)
 
-  In
-  ever
-  y
-  scie
-  ntif
-  ic
-  rese
-  arch
-  ,
-  tech
-  nolo
-  gies
-  are
-  ofte
-  n
-  used
-  by
-  scie
-  ntis
-  ts
-  to
-  coll
-  ect,
-  anal
-  yze,
-  and
-  publ
-  ish
-  data
-  .
-  With
-  comp
-  utat
-  iona
-  l
-  scie
-  nce
-  rapi
-  dly
-  grow
-  ing
-  as
-  tech
-  nolo
-  gy
-  adva
-  nces
-  ,
-  rese
-  arch
-  ers
-  have
-  been
-  call
-  ing
-  more
-  and
-  more
-  atte
-  ntio
-  n
-  to
-  Repr
-  oduc
-  ible
-  Rese
-  arch
-  .
-  "Wha
-  t
-  is
-  Repr
-  oduc
-  ible
-  Rese
-  arch
-  ?"
-  Well
-  ,
-  Repr
-  oduc
-  ible
-  Rese
-  arch
-  enab
-  les
-  rese
-  arch
-  ers
-  to
-  reus
-  e,
-  modi
-  fy
-  and
-  exte
-  nd
-  prev
-  ious
-  publ
-  ishe
-  d
-  code
-  s
-  and
-  data
-  .
-  This
-  prom
-  otes
-  rese
-  arch
-  ers
-  to
-  coll
-  abor
-  ate
-  with
-  one
-  anot
-  her.
-  In
-  this
-  pape
-  r,
-  I
-  will
-  show
-  you
-  how
-  to
-  crea
-  te
-  your
-  own
-  repr
-  oduc
-  ible
-  pape
-  r,
-  and
-  also
-  disc
-  uss
-  the
-  conc
-  epts
-  and
-  tool
-  s
-  that
-  can
-  be
-  util
-  ized
-  to
-  prom
-  ote
-  repr
-  oduc
-  ibil
-  ity
-  in
-  rese
-  arch
-  .
+How To Make Your Own Reproducible Research
+------------------------------------------
 
-  \#
-  Intr
-  oduc
-  tion
-  ----
+### Author: Widjaja, Andrea
+
+In every scientific research, technologies are often used by scientists
+to collect, analyze, and publish data. With computational science
+rapidly growing as technology advances, researchers have been calling
+more and more attention to Reproducible Research. "What is Reproducible
+Research?" Well, Reproducible Research enables researchers to reuse,
+modify and extend previous published codes and data. This promotes
+researchers to collaborate with one another. In this paper, I will show
+you how to create your own reproducible paper, and also discuss the
+concepts and tools that can be utilized to promote reproducibility in
+research.
+
+Introduction
+============
+
+------------------------------------------------------------------------
 
 Before we begin, it is important for us to know the foundation behind
 Reproducible Research and why you might consider using it more often.
@@ -230,8 +50,10 @@ I will then further discuss the following topics:
 -   Functions of each tool
 -   role each tool plays in writing this reproducible paper
 
-\# Discussion
--------------
+Discussion
+==========
+
+------------------------------------------------------------------------
 
 Typesetting/Formatting Language
 -------------------------------
@@ -322,8 +144,11 @@ once in your lifetime. Editing the duplicated file to track changes
 might seem the perfect solution because it is very simple. However, what
 happens when you have to track the changes made to the original document
 more than once? It is surely going to be a hassle to manage the multiple
-variations made. This is when a version control system steps in.\
-\#\#\#\# Git ![Stat159](../images/git-logo.png)
+variations made. This is when a version control system steps in.
+
+#### Git
+
+![Stat159](../images/git-logo.png)
 
 Git is an example of a version control software. It autamatically keeps
 track of the changes made to a file or set of files over time so that
@@ -378,8 +203,9 @@ rules that tell the system what commands you want to be executed. These
 rules are oftentimes commands to compile a series of files or remove
 certain files as a clean up operation. Before starting, make sure that
 you have `make` installed in you comuter, so that you can execute the
-Makefile.\
-\#\#\#\#\# Basic Makefile rule structure:
+Makefile.
+
+##### Basic Makefile rule structure:
 
     target: dependencies
     [tab]commands
@@ -431,11 +257,11 @@ Additional Information
 
 ### Resources
 
-> \[Lecture 3\] (http://ropensci.github.io/reproducibility-guide/)\
-> \[Lab 2\]
-> (https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd)\
-> \[Lab 3\]
-> (https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd)\
+> [Lecture 3](http://ropensci.github.io/reproducibility-guide/)\
+> [Lab
+> 2](https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd)\
+> [Lab
+> 3](https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd)\
 > [Lecture
 > 4](http://gastonsanchez.com/stat159/lectures/04-wavelab-pandoc/)\
 > [Lecture 7](https://github.com/unix-tools/tutorial-makefiles/)
@@ -478,10 +304,12 @@ Additional Information
 > framework and file structure on Monday's lab, and writing the contents
 > of this paper.
 
-> It took me around 12 hours to complete this project.
+> It took me around 14 hours to complete this project.
 
-\# Conclusion
--------------
+Conclusions
+===========
+
+------------------------------------------------------------------------
 
 Writing this reproducible paper made me realize an even greater
 importance of reproducibility in research. Reproducible research is

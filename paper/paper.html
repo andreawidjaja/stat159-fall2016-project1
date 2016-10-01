@@ -8,26 +8,17 @@
   <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
-<h2 id="abstract"># Abstract</h2>
-<table style="width:6%;">
-<colgroup>
-<col width="5%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><embed src=".%20./im%20ages%20/sta%20t159%20-log%20o.pn%20g" /></td>
-</tr>
-<tr class="even">
-<td>## How To Make Your Own Repr oduc ible Rese arch ## # Auth or: Widj aja, Andr ea</td>
-</tr>
-<tr class="odd">
-<td>In ever y scie ntif ic rese arch , tech nolo gies are ofte n used by scie ntis ts to coll ect, anal yze, and publ ish data . With comp utat iona l scie nce rapi dly grow ing as tech nolo gy adva nces , rese arch ers have been call ing more and more atte ntio n to Repr oduc ible Rese arch . &quot;Wha t is Repr oduc ible Rese arch ?&quot; Well , Repr oduc ible Rese arch enab les rese arch ers to reus e, modi fy and exte nd prev ious publ ishe d code s and data . This prom otes rese arch ers to coll abor ate with one anot her. In this pape r, I will show you how to crea te your own repr oduc ible pape r, and also disc uss the conc epts and tool s that can be util ized to prom ote repr oduc ibil ity in rese arch .</td>
-</tr>
-<tr class="even">
-<td># Intr oduc tion</td>
-</tr>
-</tbody>
-</table>
+<h1 id="abstract">Abstract</h1>
+<hr />
+<div class="figure">
+<img src="../images/stat159-logo.png" />
+
+</div>
+<h2 id="how-to-make-your-own-reproducible-research">How To Make Your Own Reproducible Research</h2>
+<h3 id="author-widjaja-andrea">Author: Widjaja, Andrea</h3>
+<p>In every scientific research, technologies are often used by scientists to collect, analyze, and publish data. With computational science rapidly growing as technology advances, researchers have been calling more and more attention to Reproducible Research. &quot;What is Reproducible Research?&quot; Well, Reproducible Research enables researchers to reuse, modify and extend previous published codes and data. This promotes researchers to collaborate with one another. In this paper, I will show you how to create your own reproducible paper, and also discuss the concepts and tools that can be utilized to promote reproducibility in research.</p>
+<h1 id="introduction">Introduction</h1>
+<hr />
 <p>Before we begin, it is important for us to know the foundation behind Reproducible Research and why you might consider using it more often. The concept of Reproducible Research relies heavily on the idea of The Scientific Method. In science, an experiment is reproducible. &quot;Why?&quot; You might ask. Scientific experiments rely heavily on evidence from data in which, hypothesis are usually tested from observations. For scientific research, to reproduce is to conduct the same experiment with a different set up. This similar concept applies to Reproducible Research. In order for data or code to be reproducible, it should be accessible to the public. The transparency that this tool of collaboration provides, demonstrates that it is heavily evidence-based and that the results are reliable and valid.</p>
 <p>This paper is, indeed, an example of a reproducible paper. I will show you how to produce your own reproducible research paper step-by-step. First of all, we have to be familiar with the five tools that I have utilized for this reproducible paper. They are Git, GitHub, Makefile, Markdown, and pandoc.</p>
 <p>I will then further discuss the following topics:</p>
@@ -35,7 +26,8 @@
 <li>Functions of each tool</li>
 <li>role each tool plays in writing this reproducible paper</li>
 </ul>
-<h2 id="discussion"># Discussion</h2>
+<h1 id="discussion">Discussion</h1>
+<hr />
 <h2 id="typesettingformatting-language">Typesetting/Formatting Language</h2>
 <h3 id="markdown">Markdown</h3>
 <p><img src="../images/markdown-logo.png" alt="Stat159" /><br />
@@ -87,8 +79,12 @@ Alternatively, you can also write it this way:</p>
 <p>The code above shows that pandoc converts (-f) from HTML (-t) to a markdown document called &quot;doc.md&quot;.<br />
 Pandoc is beneficial for everyone because it gives people access to the files they need. With research files being available and easily accessible, this introduces the idea of data transparency and efficiency in Reproducible Research.</p>
 <h2 id="version-control">Version Control</h2>
-<p>A common problem that researchers generally face is to manage changes. During the course of writing your own reproducible research, you will most like have to deal with adding new information or discoveries, modifying details, or deleting a text you might want to undo. Logically, you can do this by making copy of the original file, and editing the duplicated file. Sounds familiar? I am sure you have done this at least once in your lifetime. Editing the duplicated file to track changes might seem the perfect solution because it is very simple. However, what happens when you have to track the changes made to the original document more than once? It is surely going to be a hassle to manage the multiple variations made. This is when a version control system steps in.<br />
-#### Git <img src="../images/git-logo.png" alt="Stat159" /></p>
+<p>A common problem that researchers generally face is to manage changes. During the course of writing your own reproducible research, you will most like have to deal with adding new information or discoveries, modifying details, or deleting a text you might want to undo. Logically, you can do this by making copy of the original file, and editing the duplicated file. Sounds familiar? I am sure you have done this at least once in your lifetime. Editing the duplicated file to track changes might seem the perfect solution because it is very simple. However, what happens when you have to track the changes made to the original document more than once? It is surely going to be a hassle to manage the multiple variations made. This is when a version control system steps in.</p>
+<h4 id="git">Git</h4>
+<div class="figure">
+<img src="../images/git-logo.png" alt="Stat159" />
+<p class="caption">Stat159</p>
+</div>
 <p>Git is an example of a version control software. It autamatically keeps track of the changes made to a file or set of files over time so that you can revert files back to their previous states. It is a distributed open source medium which allows collaboration between researchers. This promotes reproducibility. To access Git, I used the command line (Terminal). Git allows me to track every pictures I added or paragraphs I modified, and compare it from the previous versions to see which one I like better.</p>
 <p>Examples of <code>git</code> commands:</p>
 <pre><code>git init: creates a new Git repository  
@@ -105,8 +101,8 @@ Additionally, GitHub is also used to ease the graders in grading this paper.</p>
 <h2 id="program-building-unix-tool">Program Building (Unix Tool)</h2>
 <h3 id="makefile">Makefile</h3>
 <p>Compiling code files can be very inefficient, especially if you have to repititively type the command lines every time you want to do it. Don't worry! In an era where almost everything is instant and convenient, Makefile gives you a shortcut to execute the commands recipe by simply running the <code>make</code>program.</p>
-<p>A Makefile is a Unix tool that is often used to simplify the organization of code compilation. It is a text file named &quot;Makefile&quot; that contains shell commands. Generally, a makefile contains a list of rules that tell the system what commands you want to be executed. These rules are oftentimes commands to compile a series of files or remove certain files as a clean up operation. Before starting, make sure that you have <code>make</code> installed in you comuter, so that you can execute the Makefile.<br />
-##### Basic Makefile rule structure:</p>
+<p>A Makefile is a Unix tool that is often used to simplify the organization of code compilation. It is a text file named &quot;Makefile&quot; that contains shell commands. Generally, a makefile contains a list of rules that tell the system what commands you want to be executed. These rules are oftentimes commands to compile a series of files or remove certain files as a clean up operation. Before starting, make sure that you have <code>make</code> installed in you comuter, so that you can execute the Makefile.</p>
+<h5 id="basic-makefile-rule-structure">Basic Makefile rule structure:</h5>
 <pre><code>target: dependencies
 [tab]commands</code></pre>
 <p>Our goal here is to build the <em>target</em> file, from the <em>dependencies</em> source files.</p>
@@ -131,9 +127,9 @@ To simplify things, an <code>*.md</code> is used to indicate all the dependent f
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="resources">Resources</h3>
 <blockquote>
-<p>[Lecture 3] (http://ropensci.github.io/reproducibility-guide/)<br />
-[Lab 2] (https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd)<br />
-[Lab 3] (https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd)<br />
+<p><a href="http://ropensci.github.io/reproducibility-guide/">Lecture 3</a><br />
+<a href="https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd">Lab 2</a><br />
+<a href="https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd">Lab 3</a><br />
 <a href="http://gastonsanchez.com/stat159/lectures/04-wavelab-pandoc/">Lecture 4</a><br />
 <a href="https://github.com/unix-tools/tutorial-makefiles/">Lecture 7</a></p>
 </blockquote>
@@ -162,9 +158,10 @@ To simplify things, an <code>*.md</code> is used to indicate all the dependent f
 <p>The most time consuming parts of this project is creating the framework and file structure on Monday's lab, and writing the contents of this paper.</p>
 </blockquote>
 <blockquote>
-<p>It took me around 12 hours to complete this project.</p>
+<p>It took me around 14 hours to complete this project.</p>
 </blockquote>
-<h2 id="conclusion"># Conclusion</h2>
+<h1 id="conclusions">Conclusions</h1>
+<hr />
 <p>Writing this reproducible paper made me realize an even greater importance of reproducibility in research. Reproducible research is beneficial in a way that it can be very efficient and minimize possible errors. I have discussed with you the five tools needed to reproduce your own research, which are: Git, GitHub, Markdown, pandoc, and Makefile. The structure this reproducible paper sets reflects the steps needed for future reproducible researches. Since it was the very first time for me, I believe that I have gained the knowledge and technical skills for Reproducibility Research.</p>
 </body>
 </html>

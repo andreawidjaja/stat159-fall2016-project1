@@ -1,4 +1,5 @@
 # Discussion
+
 -------------
 
 ## Typesetting/Formatting Language
@@ -52,7 +53,9 @@ Pandoc is beneficial for everyone because it gives people access to the files th
 ## Version Control
 
 A common problem that researchers generally face is to manage changes. During the course of writing your own reproducible research, you will most like have to deal with adding new information or discoveries, modifying details, or deleting a text you might want to undo. Logically, you can do this by making copy of the original file, and editing the duplicated file. Sounds familiar? I am sure you have done this at least once in your lifetime. Editing the duplicated file to track changes might seem the perfect solution because it is very simple. However, what happens when you have to track the changes made to the original document more than once? It is surely going to be a hassle to manage the multiple variations made. This is when a version control system steps in.  
+
 #### Git
+
 ![Stat159](../images/git-logo.png)
 
 Git is an example of a version control software. It autamatically keeps track of the changes made to a file or set of files over time so that you can revert files back to their previous states. It is a distributed open source medium which allows collaboration between researchers. This promotes reproducibility. To access Git, I used the command line (Terminal). Git allows me to track every pictures I added or paragraphs I modified, and compare it from the previous versions to see which one I like better. 
@@ -80,7 +83,9 @@ Additionally, GitHub is also used to ease the graders in grading this paper.
 Compiling code files can be very inefficient, especially if you have to repititively type the command lines every time you want to do it. Don't worry! In an era where almost everything is instant and convenient, Makefile gives you a shortcut to execute the commands recipe by simply running the `make`program.  
 
 A Makefile is a Unix tool that is often used to simplify the organization of code compilation. It is a text file named "Makefile" that contains shell commands. Generally, a makefile contains a list of rules that tell the system what commands you want to be executed. These rules are oftentimes commands to compile a series of files or remove certain files as a clean up operation. Before starting, make sure that you have `make` installed in you comuter, so that you can execute the Makefile.  
+  
 ##### Basic Makefile rule structure:
+
 ```
 target: dependencies
 [tab]commands
@@ -118,9 +123,9 @@ If you have several makefiles, then you can specify which target you want makefi
 
 ## Additional Information
 ### Resources 
-> [Lecture 3] (http://ropensci.github.io/reproducibility-guide/)   
-> [Lab 2] (https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd)    
-> [Lab 3] (https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd)   
+> [Lecture 3](http://ropensci.github.io/reproducibility-guide/)   
+> [Lab 2](https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab02/lab02-filesystem-markdown.Rmd)    
+> [Lab 3](https://github.com/ucb-stat159/stat159-fall-2016/blob/master/labs/lab03/lab03-git-basics.Rmd)   
 > [Lecture 4](http://gastonsanchez.com/stat159/lectures/04-wavelab-pandoc/)  
 > [Lecture 7](https://github.com/unix-tools/tutorial-makefiles/)
 
@@ -141,5 +146,5 @@ If you have several makefiles, then you can specify which target you want makefi
 #### Time Consumed 
 >The most time consuming parts of this project is creating the framework and file structure on Monday's lab, and writing the contents of this paper.  
 
->It took me around 12 hours to complete this project.
+>It took me around 14 hours to complete this project.
 
