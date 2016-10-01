@@ -1,9 +1,33 @@
 # stat159-fall2016-project1
 
 
-Project Structure: 
+### Author: Andrea Widjaja
 
-Author: Andrea Widjaja
+![Stat159](../images/markdown-logo.png) 
+
+
+This paper discusses the importance of reproducibility in research and the tools needed to write one.
+
+####Sections:  
+* Abstract
+* Introduction  
+* Discussion
+    * Typesetting/Formatting Language
+        * Markdown
+    * Document Conversion
+        * pandoc
+    * Version Control
+        * Git
+        * GitHub
+    * Program Building (Unix Tool)
+        * makefile
+* Additional Information
+	* Resources
+	* Project Cycle
+		* Difficulty, Challenges & Solution
+		* Time Consumed
+* Conclusion
+
 
 
 
